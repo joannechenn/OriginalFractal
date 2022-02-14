@@ -8,6 +8,7 @@ public void setup(){
   ellipseMode(CENTER);
 }
 
+
 public void draw(){
   background(0);
   fill(firstColor, secondColor, thirdColor);
@@ -15,11 +16,13 @@ public void draw(){
   myFractal(250, 250, 450);
 }
 
+
 public void mouseClicked(){
   firstColor = (int)(Math.random() * 101) + 110;
   secondColor = (int)(Math.random() * 101) + 110;
   thirdColor = (int)(Math.random() * 101) + 110;
 }
+
 
 public void myFractal(int x, int y, int z){
   rect(x, y, z, z);
